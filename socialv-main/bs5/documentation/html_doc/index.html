@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Socialv - Html - Documentation</title>
+      <!-- Meta -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="">
+      <meta name="author" content="iqonic themes">
+      <link rel="shortcut icon" href="favicon.ico">
+      <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+      <!-- FontAwesome JS -->
+      <script defer src="https://use.fontawesome.com/releases/v5.8.2/js/all.js" integrity="sha384-DJ25uNYET2XCl5ZF++U8eNxPWqcKohUUBUpKGlNLMchM7q4Wjg2CUpjHLaL8yYPH" crossorigin="anonymous"></script>
+      <!-- Global CSS -->
+      <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+      <!-- Plugins CSS -->
+      <link rel="stylesheet" href="assets/plugins/prism/prism.css">
+      <link rel="stylesheet" href="assets/plugins/elegant_font/css/style.css">
+      <!-- Theme CSS -->
+      <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+      <link rel="stylesheet" href="assets/css/custom.css">
+   </head>
+   <body class="body-green">
+      <div class="page-wrapper">
+         <!-- ******Header****** -->
+         <header id="header" class="header">
+            <div class="container">
+               <div class="branding">
+                  <h1 class="logo">
+                     <a href="index.html">
+                     <img src="./assets/images/logo.png" alt="logo" class="logo-img">
+                     <span class="text-highlight"><b>Socialv</b></span><span class="text-bold">Docs</span>
+                     </a>
+                  </h1>
+               </div>
+               <!--//branding-->
+               <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                  <li class="breadcrumb-item active">Quick Start</li>
+               </ol>
+            </div>
+            <!--//container-->
+         </header>
+         <!--//header-->
+         <div class="doc-wrapper">
+            <div class="container">
+               <div class="doc-body row">
+                  <div class="doc-content col-md-9 col-12 order-1">
+                     <div class="content-inner">
+                        <section id="quick-start-section" class="doc-section">
+                           <!--<div id="doc-header" class="doc-header text-center">
+                              <h1 class="doc-title"><i class="icon fa fa-paper-plane"></i> Quick Start</h1>
+                              <div class="meta"><i class="far fa-clock"></i> Last updated: Feb 5th, 2020</div>
+                              </div>&lt;!&ndash;//doc-header&ndash;&gt;-->
+                           <h2 class="section-title">Quick Start</h2>
+                           <div class="section-block">
+                              <h3 class="block-title">Basic Installation</h3>
+                              <p>Steps to be follow for getting started with the static template:</p>
+                              <div class="row">
+                                 <div class="col-md-12 left-align">
+                                    <p>Get details about Requirements, Basic Installation, Structure, Color mode, Logo, favicon and loader setup your project with easy steps.</p>
+                                 </div>
+                              </div>
+                           </div>
+                           <!--//section-block-->
+                           <div class="section-block" id="requirements">
+                              <h3>Requirement</h3>
+                              <p>This template have required 2 depandency</p>
+                              <div class="row">
+                                 <div class="col-md-12">
+                                    <ol>
+                                       <li>
+                                          NodeJS
+                                          <ul>
+                                             <li>Windows – Download and install node.js from <a href="https://nodejs.org/en/">https://nodejs.org/en/</a> Install latest LTS version</li>
+                                             <li>Linux – Install with terminal by this link <a href="https://github.com/nodesource/distributions/blob/master/README.md#installation-instructions">https://github.com/nodesource/distributions/blob/master/README.md#installation-instructions</a></li>
+                                             <li>Mac – Download and install node.js from <a href="https://nodejs.org/en/download/">https://nodejs.org/en/download/</a> install LTS version</li>
+                                          </ul>
+                                       </li>
+                                       <li>
+                                          Gulp
+                                          <ul>
+                                             <li>Gulp is a toolkit to automate & enhance your workflow for development. <br><a href="https://gulpjs.com/docs/en/getting-started/quick-start">https://gulpjs.com/docs/en/getting-started/quick-start</a></li>
+                                          </ul>
+                                       </li>
+                                    </ol>
+                                 </div>
+                              </div>
+                           </div>
+                           <!--//section-block-->
+                           <div class="section-block" id="file-structure">
+                              <h3>File Structure</h3>
+                              <p>Here is the <strong>general File structure of the template:</strong></p>
+                              <div class="row">
+                                 <div class="col-md-12">
+                                    <ul id="myfiles">
+                                       <li>
+                                          <i class="fa fa-folder-open mr-2" aria-hidden="true"></i><span>Template</span>
+                                          <ul>
+                                             <li>
+                                                <i class="fa fa-folder-open mr-2" aria-hidden="true"></i><span>gulp+hbs</span>
+                                                <ul class="list-inline">
+                                                   <li>
+                                                      <i class="fa fa-folder-open mr-2" aria-hidden="true"></i><span>src</span>
+                                                      <ul>
+                                                         <li>
+                                                            <i class="fa fa-folder-open mr-2" aria-hidden="true"></i><span>assets</span>
+                                                            <ul>
+                                                               <li><i class="fa fa-folder-open mr-2" aria-hidden="true"></i><span>css</span></li>
+                                                               <li><i class="fa fa-folder-open mr-2" aria-hidden="true"></i><span>scss</span></li>
+                                                               <li><i class="fa fa-folder-open mr-2" aria-hidden="true"></i><span>js</span></li>
+                                                               <li><i class="fa fa-folder-open mr-2" aria-hidden="true"></i><span>images</span></li>
+                                                               <li><i class="fa fa-folder-open mr-2" aria-hidden="true"></i><span>vendor</span></li>
+                                                            </ul>
+                                                         </li>
+                                                         <li>
+                                                            <i class="fa fa-folder-open mr-2" aria-hidden="true"></i><span>template</span>
+                                                            <ul>
+                                                               <li>
+                                                                  <i class="fa fa-folder-open mr-2" aria-hidden="true"></i><span>app</span>
+                                                                  <ul>
+                                                                     <li><i class="fa fa-file mr-2" aria-hidden="true"></i><span>all app html pages</span></li>
+                                                                  </ul>
+                                                               </li>
+                                                               <li>
+                                                                  <i class="fa fa-folder-open mr-2" aria-hidden="true"></i><span>backend</span>
+                                                                  <ul>
+                                                                     <li><i class="fa fa-file mr-2" aria-hidden="true"></i><span>all backend html pages</span></li>
+                                                                  </ul>
+                                                               </li>
+                                                            </ul>
+                                                         </li>
+                                                      </ul>
+                                                   </li>
+                                                   <li>
+                                                      <i class="fa fa-folder-open mr-2" aria-hidden="true"></i><span>gulp</span>
+                                                      <ul>
+                                                         <li><i class="fa fa-file mr-2" aria-hidden="true"></i><span>all gulp task here</span></li>
+                                                      </ul>
+                                                   </li>
+                                                   <li>
+                                                      <i class="fa fa-folder-open mr-2" aria-hidden="true"></i><span>JsonData</span>
+                                                      <ul>
+                                                         <li><i class="fa fa-file mr-2" aria-hidden="true"></i><span>all sidebar list item come with json file</span></li>
+                                                      </ul>
+                                                   </li>
+                                                   <li><i class="fa fa-file mr-2" aria-hidden="true"></i><span>gulp.config.json</span></li>
+                                                   <li><i class="fa fa-file mr-2" aria-hidden="true"></i><span>gulpfile.js</span></li>
+                                                   <li><i class="fa fa-file mr-2" aria-hidden="true"></i><span>package.json</span></li>
+                                                </ul>
+                                             </li>
+                                             <li>
+                                                <i class="fa fa-folder-open mr-2" aria-hidden="true"></i><span>html</span>
+                                                <ul class="list-inline">
+                                                   <li>
+                                                      <i class="fa fa-folder-open mr-2" aria-hidden="true"></i><span>assets</span>
+                                                      <ul>
+                                                         <li><i class="fa fa-folder-open mr-2" aria-hidden="true"></i><span>css</span></li>
+                                                         <li><i class="fa fa-folder-open mr-2" aria-hidden="true"></i><span>js</span></li>
+                                                         <li><i class="fa fa-folder-open mr-2" aria-hidden="true"></i><span>images</span></li>
+                                                         <li><i class="fa fa-folder-open mr-2" aria-hidden="true"></i><span>vendor</span></li>
+                                                      </ul>
+                                                   </li>
+                                                   <li>
+                                                      <i class="fa fa-folder-open mr-2" aria-hidden="true"></i><span>app</span>
+                                                      <ul>
+                                                         <li><i class="fa fa-file mr-2" aria-hidden="true"></i><span>all app html pages</span></li>
+                                                      </ul>
+                                                   </li>
+                                                   <li>
+                                                      <i class="fa fa-folder-open mr-2" aria-hidden="true"></i><span>backend</span>
+                                                      <ul>
+                                                         <li><i class="fa fa-file mr-2" aria-hidden="true"></i><span>all backend html pages</span></li>
+                                                      </ul>
+                                                   </li>
+                                                </ul>
+                                             </li>
+                                             <li>
+                                                <i class="fa fa-folder-open mr-2" aria-hidden="true"></i><span>documentation</span>
+                                                <ul>
+                                                   <li><i class="fa fa-folder-open mr-2" aria-hidden="true"></i><span>asset</span></li>
+                                                   <li><i class="fa fa-file mr-2" aria-hidden="true"></i><span>index.html</span></li>
+                                                </ul>
+                                             </li>
+                                          </ul>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                           <!--//section-block css-->
+                        </section>
+                        <!--//doc-section-->
+                        <section class="section" id="basic-installation">
+                           <h2 class="sub-title">
+                              Installation
+                              <hr>
+                           </h2>
+                           <p>Steps to be follow for getting started with the template:</p>
+                           <div class="row">
+                              <div class="col-md-12 col-12">
+                                 <h4 id="gulp-install">Gulp</h4>
+                                 <ol>
+                                    <li>
+                                       Start command prompt window or terminal and change directory gulp+hbs
+                                       <pre class="language-markup">cd gulp+hbs</pre>
+                                    </li>
+                                    <li>
+                                       Install via the npm
+                                       <pre class="language-markup">npm install</pre>
+                                    </li>
+                                    <li>
+                                       For development
+                                       <pre class="language-markup">npm run dev</pre>
+                                       OR
+                                       <pre class="language-markup">gulp watch</pre>
+                                    </li>
+                                    <li>
+                                       For build
+                                       <pre class="language-markup">npm run build</pre>
+                                       OR
+                                       <pre class="language-markup">gulp build</pre>
+                                    </li>
+                                 </ol>
+                                 <h4 id="html-install">HTML</h4>
+                                 <ol>
+                                    <li>Open <span class="text-red">html</span> Folder to find all the Templates Files</li>
+                                    <li>You'll have to upload these file using a FTP on your server</li>
+                                    <li>
+                                       Make sure you maintain the structure while uploading the required files/folders:
+                                       <ul class="mt-2">
+                                          <li><i class="fa fa-folder-open" aria-hidden="true"></i><span class="text-highlight"> HTML/assets/css</span> - Stylesheets Folder</li>
+                                          <li><i class="fa fa-folder-open" aria-hidden="true"></i><span class="text-highlight"> HTML/assets/images</span> - Images Folder</li>
+                                          <li><i class="fa fa-folder-open" aria-hidden="true"></i><span class="text-highlight"> HTML/assets/js</span> - Javacripts Folder</li>
+                                          <li><i class="fa fa-folder-open" aria-hidden="true"></i><span class="text-highlight"> HTML/assets/vendor</span> - Vendor Folder</li>
+                                          <li><i class="fa fa-folder-open" aria-hidden="true"></i><span class="text-highlight"> HTML/app</span> -App Folder</li>
+                                          <li><i class="fa fa-folder-open" aria-hidden="true"></i><span class="text-highlight"> HTML/backend/index.html</span> - Index File/Homepage</li>
+                                       </ul>
+                                       Other files can be used according to your convenience.
+                                    </li>
+                                    <li>Now that you have followed these steps your basic installation is complete and ready to flaunt your site to the world.</li>
+                                 </ol>
+                              </div>
+                           </div>
+                           <!--//row-->
+                        </section>
+                        <section id="basic-structure"  class="section-block" >
+                           <h2 id="cutomization" class="sub-title">
+                              Customization 
+                              <hr>
+                           </h2>
+                           <p>There are some  customization like change color, logo, loader, favicon, default mode (dark or light) etc...</p>
+                           <h3 id="color-mode" class="block-title">Color</h3>
+                           <p>Here is the <strong>Change color mode Dark/Light in gulp</strong></p>
+                           <p>Goto gulp.config.json and dark mode change with json file</p>
+                           <div class="row">
+                              <div class="col-md-12">
+                                 <ol>
+                                    <li>
+                                       For Dark mode
+                                       <pre class="language-markup">"dark": true</pre>
+                                    </li>
+                                    <li>
+                                       For Light mode
+                                       <pre class="language-markup">"dark": false</pre>
+                                    </li>
+                                 </ol>
+                              </div>
+                           </div>
+                           <p>Here is the <strong>Change color mode Dark/Light in html</strong></p>
+                           <div class="row">
+                              <div class="col-md-12">
+                                 <pre class="language-markup"><code class="language-markup">If you want to light mode
+&lt;body&gt;
+
+If you want to Dark mode
+&lt;body class="dark"&gt;</code></pre>
+                              </div>
+                           </div>
+                           <p>Here is the <strong>Change color of template in gulp</strong></p>
+                           <div class="row">
+                              <div class="col-md-12">
+                                 <p>Go to src/assets/scss/_custom_variable.scss and add some color variable.</p>
+                                 <pre class="language-markup"><code class="language-markup">$primary-light:rgba($primary, .2);
+$primary: #50b5ff;
+$primary-dark: #2aa3fb;</code></pre>
+                                 <!-- Chnage Color  -->
+                              </div>
+                           </div>
+                        </section>
+                        <section class="section" id="basic-favicon">
+                           <h3 class="block-title">Favicon icon</h3>
+                           <p>Favicon is an icon associated with the URL that is displayed at various places, such as in a browser’s address bar or next to the site name in a bookmark list.</p>
+                           <p>You can add a Favicon to your Website using the following code:</p>
+                           <div class="row">
+                              <div class="col-md-12">
+                                 <pre class="language-markup"><code class="language-markup">&#x3C;link rel=&#x22;shortcut icon&#x22; href=&#x22;images/favicon.ico&#x22;/&#x3E;</code></pre>
+                              </div>
+                           </div>
+                           <p>In Gulp version favicon change with 2 diffrent way</p>
+                           <ol>
+                              <li>
+                                 Replace favicon image or rename favicon icon name. or go to src/template/partials/backend/head.hbs file and change.
+                              </li>
+                              <li>
+                                 Go to gulp.config.json and add or change path set with images so you dont need to add images/favicon.ico faviconName: "{faviconImage}.ico" 
+                              </li>
+                           </ol>
+                        </section>
+                        <section class="section" id="basic-loading">
+                           <h3 class="block-title">Loading Transitions</h3>
+                           <p>Page Loading Transitions are enabled by default. If you wish to disable the page loading transition you can simply delete below section</p>
+                           <div class="row">
+                              <div class="col-md-12">
+                                 <pre class="language-markup"><code class="language-markup">&#x3C;div id=&#x22;loading&#x22;&#x3E;
+    &#x3C;div id=&#x22;loading-center&#x22;&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</code></pre>
+                              </div>
+                           </div>
+                           <p>In gulp version loader change with 2 diffrant way</p>
+                           <ul>
+                              <li>Replace loader image. or go to src/template/partials/backend/loader.hbs file and change.</li>
+                              <li>Go to gulp.config.json and add or change path set with images so you dont need to add images/loader.gif loaderName: "{loaderImage}.gif"</li>
+                           </ul>
+                        </section>
+                        <section class="section" id="basic-logo">
+                           <h3 class="block-title">Logo</h3>
+                           <p>The Logo Container can be found in the Header Container - <span class="atv"> #header</span>. Replace <span class="atv">"logo.png"</span> with your own logo image URL.</p>
+                           <div class="row">
+                              <div class="col-md-12">
+                                 <pre class="language-markup"><code class="language-markup">&#x3C;ul class=&#x22;menu-logo&#x22;&#x3E;
+&#x9;&#x3C;li&#x3E;
+&#x9;&#x9;&#x3C;a href=&#x22;index.html&#x22;&#x3E;&#x3C;img src=&#x22;../assets/images/logo.png&#x22; alt=&#x22;logo&#x22;&#x3E;&#x3C;/a&#x3E;&#x9;
+&#x9;&#x3C;/li&#x3E;
+&#x3C;/ul&#x3E;</code></pre>
+                              </div>
+                           </div>
+                           <p>In gulp version logo change with 2 diffrant way</p>
+                           <ol>
+                              <li>Replace logo image. or go to src/template/partials/backend/header.hbs file and change.</li>
+                              <li>Go to gulp.config.json and add or change path set with images so you dont need to add images/logo.png logoName: "{logoImage}.png"</li>
+                           </ol>
+                        </section>
+                        <section class="section" id="basic-fonts">
+                           <h3 class="block-title">For Changing Fonts</h3>
+                           <p> You can add/change the site font, from all fonts used from <a href="https://www.google.com/fonts"> Google Web Font Services,</a> with the one that suits you the best. You can find the font link in top of the <span class="atv">Style.css</span> in all HTML file. See example below:</p>
+                           <div class="row">
+                              <div class="col-md-12">
+                                 <pre class="language-markup"><code class="language-markup">&#x3C;!-- google font --&#x3E;
+&#x3C;link href=&#x22;https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700,800|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900&#x22; rel=&#x22;stylesheet&#x22;&#x3E;</code></pre>
+                                 <p>To include new font you can simply add another link like this: </p>
+                                 <pre class="language-markup"><code class="language-markup">&#x3C;!-- google font --&#x3E;
+&#x3C;!--Robaoto font --&#x3E;
+&#x3C;link href=&#x22;https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&#x26;display=swap&#x22; /&#x3E;
+
+&#x3C;!--&#x22;Nunito&#x22;,sans-serif font --&#x3E;
+&#x3C;link href=&#x22;https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,200;1,300;1,400;1,600&#x26;display=swap&#x22; rel=&#x22;stylesheet&#x22; &#x3E;</code></pre>
+                                 <p>In order to change the fonts, you will need to edit the above links with your custom font, You can easily use <a href="https://www.google.com/fonts"> Google Web Font Services</a> if you plan to use a Google Font or remove it completely. If you plan to use a self hosted font, here is an Example of using <a href="https://css-tricks.com/snippets/css/using-font-face/">Self Hosted Fonts</a></p>
+                                 <p>In gulp+hbs version change with scss file.</p>
+                                 <ol>
+                                    <li>
+                                       Go to src/assets/scss/helper/_fonts.scss and change google fonts
+                                       <pre class="language-markup"><code class="language-markup">&#x3C;!-- google font --&#x3E;
+&#x3C;!--Robaoto font --&#x3E;
+@import url(&#x22;https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&#x26;display=swap&#x22;)
+
+&#x3C;!--&#x22;Nunito&#x22;,sans-serif font --&#x3E;
+@import (&#x22;https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,200;1,300;1,400;1,600&#x26;display=swap&#x22;)
+</code></pre>
+                                    </li>
+                                    <li>
+                                       Go to src/assets/scss/_variable.scss and change font family variable
+                                       <pre class="language-markup"><code class="language-markup">$font-family-title: &#x27;Roboto&#x27;, sans-serif;
+$font-family-base: &#x27;Nunito&#x27;, sans-serif;</code></pre>
+                                    </li>
+                                 </ol>
+                              </div>
+                           </div>
+                        </section>
+                        <div id="basic-structure" class="section-block">
+                           <h3 class="block-title">HTML Structure</h3>
+                           <p>Here is the <strong>general HTML structure of the template:</strong></p>
+                           <div class="row">
+                              <div class="col-md-12">
+                                 <pre class=" language-markup"><code class=" language-markup">
+<span class="token doctype">&lt;!DOCTYPE html&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+[Page meta, page css, page js files, page title etc...]
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token comment" spellcheck="true">&lt;!-- preloader --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span>  <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>loading<span class="token punctuation">"</span></span> <span class="token punctuation">&gt;</span></span> [LOADER CONTENT] <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token comment" spellcheck="true">&lt;!--preloader --&gt;</span>
+
+<span class="token comment" spellcheck="true">&lt;!--header --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>header</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>header</span><span class="token punctuation">&gt;</span></span>
+<span class="token comment" spellcheck="true">&lt;!--header --&gt;</span>
+
+<span class="token comment" spellcheck="true">&lt;!--Slider- --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>rev_slider_1_1_wrapper<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>rev_slider_wrapper fullscreen-container<span class="token punctuation">"</span></span> <span class="token punctuation">&gt;</span></span>
+[SLIDER CONTENT]
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token comment" spellcheck="true">&lt;!--Slider --&gt;</span>
+
+<span class="token comment" spellcheck="true">&lt;!--main-content- --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>main-content<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token comment" spellcheck="true">&lt;!--Section 1 --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>section</span><span class="token punctuation">&gt;</span></span>
+[SECTION 1 CONTENT]
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>section</span><span class="token punctuation">&gt;</span></span>
+<span class="token comment" spellcheck="true">&lt;!--Section 1 --&gt;</span>
+
+<span class="token comment" spellcheck="true">&lt;!--Section 2 --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>section</span><span class="token punctuation">&gt;</span></span>
+[SECTION 2 CONTENT]
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>section</span><span class="token punctuation">&gt;</span></span>
+<span class="token comment" spellcheck="true">&lt;!--Section 2 --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token comment" spellcheck="true">&lt;!--main-content --&gt;</span>
+<span class="token comment" spellcheck="true">&lt;!--footer --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>footer</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>iq-footer2<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+[FOOTER_CONTENT]
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>footer</span><span class="token punctuation">&gt;</span></span>
+<span class="token comment" spellcheck="true">&lt;!--footer --&gt;</span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>back-to-top<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+[BACK TO TOP CONTENT]
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+
+[PAGE JAVASCRIPTS HERE]
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+                              </div>
+                           </div>
+                        </div>
+                        <div id="basic-css" class="section-block">
+                           <h3 class="block-title">CSS Structure</h3>
+                           <p>Here is the <strong>general CSS structure of the template:</strong></p>
+                           <div class="row">
+                              <div class="col-md-12">
+                                 <pre class=" language-markup">
+<code class=" language-markup">
+&lt;!-- libs CSS --&gt;
+&lt;link rel="stylesheet" href="../assets/css/libs.min.css"&gt;
+
+&lt;!-- socialv CSS --&gt;
+&lt;link rel="stylesheet" href="../assets/css/socialv.css?v={{version}}"&gt;
+
+&lt;!--fontawesome CSS --&gt;
+&lt;link rel="stylesheet" href="../assets/vendor/@fortawesome/fontawesome-free/css/all.min.css"&gt;
+
+&lt;!-- line-awesome CSS --&gt;
+&lt;link rel="stylesheet" href="../assets/vendor/line-awesome/dist/line-awesome/css/line-awesome.min.css"&gt;
+
+&lt;!-- remixicon CSS --&gt;
+&lt;link rel="stylesheet" href="../assets/vendor/remixicon/fonts/remixicon.css"&gt;
+</code>
+</pre>
+                              </div>
+                           </div>
+                        </div>
+                        <div id="basic-js" class="section-block">
+                           <h3 class="block-title">Javascript Structure</h3>
+                           <p>Here is the <strong>general Javascript structure of the template:</strong></p>
+                           <div class="row">
+                              <div class="col-md-12">
+                                 <pre class=" language-markup"><code class=" language-markup">
+&lt;!-- libs JS --&gt;
+&lt;script src="../assets/js/libs.min.js" &gt;&lt;/script&gt;
+
+&lt;!-- slider  --&gt;
+&lt;script src="../assets/js/slider.js"&gt;&lt;/script&gt;
+
+&lt;!-- Masonary JavaScript --&gt;
+&lt;script src="../assets/js/masonry.pkgd.min.js"&gt;&lt;/script&gt;
+
+&lt;!-- Masonary JavaScript --&gt;
+&lt;script src="../assets/js/masonry.pkgd.min.js"&gt;&lt;/script&gt;
+
+&lt;!--SweetAlert JavaScript --&gt;
+&lt;script src="../assets/js/sweetalert.js"&gt;&lt;/script&gt;
+
+&lt;!--customizer JavaScript --&gt;
+&lt;script src="../assets/js/customizer.js"&gt;&lt;/script&gt;
+
+&lt;!--Chart weather JavaScript --&gt;
+&lt;script src="../assets/js/charts/weather-chart.js"&gt;&lt;/script&gt;
+
+&lt;!-- app JavaScript  --&gt;
+&lt;script src="../assets/js/app.js" &gt;&lt;/script&gt;
+</code></pre>
+                              </div>
+                           </div>
+                        </div>
+                        <section id="helper-section" class="doc-section">
+                           <h2 class="section-title">Helper classes</h2>
+                           <div id="basic-padding"  class="section-block">
+                              <h3 class="block-title">For section padding</h3>
+                              <p>You can add this helper class to set section <span class="atv">padding top 100px</span> and <span class="atv">padding bottom 100px</span>.
+                                 <br> Add <span class="atv">overview-block-ptb</span> class in <span class="atv">section</span> tag. See example below:
+                              </p>
+                              <div class="row">
+                                 <div class="col-md-12">
+                                    <pre><code class="language-markup">
+&lt;section class=&quot;... overview-block-ptb&quot;&gt;
+  [YOUR CONTENT]<p>
+&lt;/section&gt;
+                                        </code></pre>
+                                    <p> <span class="badge badge-danger">Note</span> Use this helper class to maintain all page section spacing. You can also use <span class="atv">overview-block-pt</span> for only padding top and <span class="atv">overview-block-pb</span> for only padding bottom. </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <!--//section-block fonts-->
+                           <div class="section-block" id="basic-color">
+                              <h3 class="block-title">For Text color</h3>
+                              <p>You can use color in the Text. simply add <span class="atv"> .main-color </span> ( or any color you want) class where you want to use. See example below: </p>
+                              <div class="row">
+                                 <div class="col-md-12">
+                                    <pre><code class="language-markup">
+&lt;div class=&quot;main-color&quot;&gt;
+    [YOUR TEXT CONTENT]
+&lt;/div&gt;
+                                        </code></pre>
+                                    <p> <span class="badge badge-danger">Note</span> We include 4 color helper class in our template <span class="atv">text-gray, text-black, main-color and text-white</span>. you can add unlimited color class according to your needs. </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="section-block" id="basic-background">
+                              <h3 class="block-title">For Background color</h3>
+                              <p>You can use color in the background. simply add <span class="atv"> .white-bg</span> (or any color you want) class where you want to use. See example below: </p>
+                              <div class="row">
+                                 <div class="col-md-12">
+                                    <pre><code class="language-markup">
+&lt;div class=&quot;green-bg&quot;&gt;
+    [YOUR CONTENT]
+&lt;/div&gt;
+                                        </code></pre>
+                                    <p> <span class="badge badge-danger">Note</span> We include 4 color helper class in our template <span class="atv">text-gray, text-black, main-color and text-white</span>. you can add unlimited color class according to your needs. </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="section-block" id="basic-pattern">
+                              <h3 class="block-title">For Background Images and pattern</h3>
+                              <p>You can use an image in the background with parallax effect by simply adding <span class="atv"> InlineStyle </span> in div tag and by use of this you can create your own background. See example below: </p>
+                              <div class="row">
+                                 <div class="col-md-12">
+                                    <pre><code class="language-markup">
+&lt;div style=&quot;background-image:url(Path); &quot;&gt;
+    [YOUR CONTENT]
+&lt;/div&gt;
+                                        </code></pre>
+                                    <br>
+                                    <p> If your background is small and you want to use repeated background then use styling property <span class="atv"> background-repeat </span> and set the value <span class="atv">repeat</span> or <span class="atv">no-repeat</span>. See the example below:</p>
+                                    <pre><code class="language-markup">
+&lt;div style=&quot;background-image:url(Path); background-repeat:no-repeat;&quot;&gt;
+    [YOUR CONTENT]
+&lt;/div&gt;
+                                        </code></pre>
+                                    <br>
+                                    <p> If you want to use your background like cover or cointainer. You just need to add styling property <span class="atv"> background-size </span> and set the value <span class="atv">cover</span> or <span class="atv">cointainer</span>. see the example below:</p>
+                                    <pre><code class="language-markup">
+&lt;div style=&quot;background-image:url(Path); background-size:cover;&quot;&gt;
+    [YOUR CONTENT]
+&lt;/div&gt;</code></pre>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="section-block" id="basic-overlay">
+                              <h3 class="block-title">For Background overlay</h3>
+                              <p>You can use these <span class="atv"> .iq-over-black-30, .iq-over-white-20, .iq-over-green-90 </span> classes to any element in your HTML code to apply overlay color on any image or section. See example below:</p>
+                              <div class="row">
+                                 <div class="col-md-12">
+                                    <pre><code class="language-markup">
+&lt;div class=&quot;iq-over-black-80&quot;&gt;
+    [YOUR CONTENT]
+&lt;/div&gt;
+                                        </code></pre>
+                                    <p><strong>Structure: </strong> <span class="atv">.iq-over-{<b>color</b>}-{<b>opacity</b>}</span>. For Example, <span class="atv"> .iq-over-black-80</span></p>
+                                 </div>
+                              </div>
+                           </div>
+                        </section>
+                        <!--//doc-section-->
+                        <section id="basic-components" class="doc-section">
+                           <h2 class="section-title">Bootstrap Components</h2>
+                           <div class="section-block">
+                              <div class="row">
+                                 <div class="col-md-12">
+                                    <ul>
+                                       <li>
+                                          <a href="https://getbootstrap.com/docs/5.0/utilities/text/#text-alignment" target="black">Text Alignments</a>
+                                       </li>
+                                       <li>
+                                          <a href="https://getbootstrap.com/docs/5.0/components/alerts/" target="black">Alerts</a>
+                                       </li>
+                                       <li>
+                                          <a href="https://getbootstrap.com/docs/5.0/components/badge/" target="black">Badges</a>
+                                       </li>
+                                       <li>
+                                          <a href="https://getbootstrap.com/docs/5.0/components/carousel/" target="black">Carousel</a>
+                                       </li>
+                                       <li>
+                                          <a href="https://getbootstrap.com/docs/5.0/components/offcanvas/" target="black">Offcanvas</a>
+                                       </li>
+                                       <li>
+                                          <a href="https://getbootstrap.com/docs/5.0/layout/grid/">Columns</a>
+                                       </li>
+                                       <li>
+                                          <a href="https://getbootstrap.com/docs/5.0/content/tables/">Tables</a>
+                                       </li>
+                                       <li>
+                                          <a href="https://getbootstrap.com/docs/5.0/components/buttons/" target="black">Buttons</a>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                        </section>
+                        <!--//doc-section-->
+                        <section id="basic-sliders" class="doc-section">
+                           <h2 class="section-title">For Sliders</h2>
+                           <div class="section-block">
+                              <p>There 2 different sliders for you to be used on any page with variety of Options. List of the Sliders:</p>
+                              <ul>
+                                 <li><strong><i class="fa fa-folder-open" aria-hidden="true"></i> Owl carousel</strong></li>
+                              </ul>
+                           </div>
+                           <!--//section-block-->
+                        </section>
+                        <!--//doc-section-->
+                        <section id="basic-carousel" class="doc-section">
+                           <h2 class="section-title">For Owl carousel</h2>
+                           <div class="section-block">
+                              <p>This excellent carousel slider can be controlled using HTML5 data attributes.</p>
+                              <p>Find the full online <a href="http://www.owlcarousel.owlgraphic.com/docs/started-welcome.html"> owl carousel Slider documentation</a>.</p>
+                           </div>
+                           <!--//section-block-->
+                        </section>
+                        <!--//doc-section-->
+                        <section id="basic-source" class="doc-section">
+                           <h2 class="section-title">Source & Credits</h2>
+                           <div class="section-block">
+                              <p>All images and videos are for preview purposes only and are not included in the download files. Images are of copyrights under Creative Commons CC0.</p>
+                              <br>
+                              <h3 class="block-title">Images</h3>
+                              <ul>
+                                 <li>bigstockphoto <a href="https://www.bigstockphoto.com/">bigstockphoto</a></li>
+                                 <li>Pexels <a href="https://www.pexels.com/">Pexels</a></li>
+                                 <li>freepik <a href="http://www.freepik.com/">freepik</a></li>
+                                 <li>pixabay <a href="https://pixabay.com/">pixabay</a></li>
+                              </ul>
+                              <br>
+                              <br>
+                              <h3 class="block-title">Scripts</h3>
+                              <ul>
+                                 <li><a href="https://jquery.com/">Jquery</a></li>
+                                 <li><a href="http://www.owlcarousel.owlgraphic.com/">Owl Carousel 2</a></li>
+                                 <li><a href="http://dimsemenov.com/plugins/magnific-popup/">Magnific Popup</a></li>
+                                 <li><a href="https://github.com/bas2k/jquery.appear/">Jquery appear</a></li>
+                                 <li><a href="https://github.com/mhuggins/jquery-countTo">Counter</a></li>
+                                 <li><a href="https://github.com/glix/jQuery-Plugins/tree/master/Modern-Circular-jQuery-Countdown-Timer-Plugin-Final-Countdown">Countdown</a></li>
+                              </ul>
+                              <br>
+                              <br>
+                              <h3 class="block-title">CSS & Fonts</h3>
+                              <ul>
+                                 <li><a href="http://getbootstrap.com/">Bootstrap</a></li>
+                                 <li><a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a></li>
+                                 <li><a href="http://ionicons.com/#cdn">ionicons</a></li>
+                                 <li><a href="https://www.google.com/fonts">Google Fonts</a></li>
+                              </ul>
+                           </div>
+                           <!--//section-block-->
+                        </section>
+                        <!--//doc-section-->
+                     </div>
+                     <!--//content-inner-->
+                  </div>
+                  <!--//doc-content-->
+                  <div class="doc-sidebar col-md-3 col-12 order-0 d-none d-md-flex">
+                     <div id="doc-nav" class="doc-nav">
+                        <nav id="doc-menu" class="nav doc-menu flex-column sticky">
+                           <a class="font-weight-bolder nav-link scrollto" href="#quick-start-section">Quick Start</a>
+                           <nav class="doc-sub-menu nav flex-column">
+                              <a class="nav-link scrollto" href="#requirements">Requirement</a>
+                              <a class="nav-link scrollto" href="#file-structure">File Structure</a>
+                           </nav>
+                           <!--//nav-->
+                           <a class="font-weight-bolder nav-link scrollto" href="#basic-installation">Installation</a>
+                           <nav class="doc-sub-menu nav flex-column">
+                              <a class="nav-link scrollto" href="#gulp-install">Gulp</a>
+                              <a class="nav-link scrollto" href="#html-install">HTML</a>
+                           </nav>
+                           <!--//nav-->
+                           <a class="font-weight-bolder nav-link scrollto" href="#cutomization">Customization</a>
+                           <nav class="doc-sub-menu nav flex-column">
+                              <a class="nav-link scrollto" href="#color-mode">Color</a>
+                              <a class="nav-link scrollto" href="#basic-favicon">Favicon</a>
+                              <a class="nav-link scrollto" href="#basic-loading">Loading Transition</a>
+                              <a class="nav-link scrollto" href="#basic-logo">Logo</a>
+                              <a class="nav-link scrollto" href="#basic-fonts">Changing Fonts</a>
+                              <a class="nav-link scrollto" href="#basic-structure">HTML Structure</a>
+                              <a class="nav-link scrollto" href="#basic-css">CSS Structure</a>
+                              <a class="nav-link scrollto" href="#basic-js">Javascript Structure</a>
+                           </nav>
+                           <!--//nav-->
+                           <a class="font-weight-bolder nav-link scrollto" href="#helper-section">Helper classes</a>
+                           <nav class="doc-sub-menu nav flex-column">
+                              <a class="nav-link scrollto" href="#basic-padding">For section padding</a>
+                              <a class="nav-link scrollto" href="#basic-color">For Text color</a>
+                              <a class="nav-link scrollto" href="#basic-background">For Background color</a>
+                              <a class="nav-link scrollto" href="#basic-pattern">For Background Images and pattern</a>
+                              <a class="nav-link scrollto" href="#basic-overlay">For Background overlay</a>
+                           </nav>
+                           <!--//nav-->
+                           <a class="font-weight-bolder nav-link scrollto" href="#basic-components">Bootstrap Components</a>
+                           <a class="font-weight-bolder nav-link scrollto" href="#basic-sliders">For Sliders</a>
+                           <a class="font-weight-bolder nav-link scrollto" href="#basic-carousel">For Owl carousel</a>
+                           <a class="font-weight-bolder nav-link scrollto" href="#basic-source">Source & Credits</a>
+                        </nav>
+                        <!--//doc-menu-->
+                     </div>
+                  </div>
+                  <!--//doc-sidebar-->
+               </div>
+               <!--//doc-body-->
+            </div>
+            <!--//container-->
+         </div>
+         <!--//doc-wrapper-->
+      </div>
+      <!--//page-wrapper-->
+      <footer id="footer" class="footer text-center">
+         <div class="container">
+            <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
+            <small class="copyright">Designed with <i class="fas fa-heart"></i> by <a href="https://themes.3rdwavemedia.com/" target="_blank">Xiaoying Riley</a> for developers</small>
+         </div>
+         <!--//container-->
+      </footer>
+      <!--//footer-->
+      <!-- Main Javascript -->
+      <script type="text/javascript" src="assets/plugins/jquery-3.3.1.min.js"></script>
+      <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="assets/plugins/prism/prism.js"></script>
+      <script type="text/javascript" src="assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script>
+      <script type="text/javascript" src="assets/plugins/stickyfill/dist/stickyfill.min.js"></script>
+      <script type="text/javascript" src="assets/js/main.js"></script>
+   </body>
+</html>

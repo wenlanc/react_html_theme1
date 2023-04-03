@@ -1,0 +1,37 @@
+{
+    "appName": "SocialV",
+    "output" : "dist",
+    "mini": "true",
+    "logoName": "",
+    "faviconName": "",
+    "loaderName": "",
+    "dark": "false",
+    "rtl": "false",
+    "assets": {
+        "fonts": [
+            "./src/assets/fonts/**/*.*"
+        ],
+        "style": [
+            "./node_modules/swiper/swiper-bundle.min.css",
+            "./node_modules/flatpickr/dist/flatpickr.min.css",
+            "./node_modules/datatables/media/css/jquery.dataTables.min.css",
+            "./node_modules/select2/dist/css/select2.min.css",
+            "./node_modules/vanillajs-datepicker/dist/css/datepicker.min.css",
+            "./src/assets/vendor/Leaflet/leaflet.css"
+        ],
+        "js": [
+            "./node_modules/jquery/dist/jquery.js",
+            "./node_modules/@popperjs/core/dist/umd/popper.min.js",
+            "./node_modules/bootstrap/dist/js/bootstrap.min.js",
+            "./node_modules/waypoints/lib/jquery.waypoints.js",
+            "./node_modules/flatpickr/dist/flatpickr.min.js",
+            "./node_modules/select2/dist/js/select2.min.js",
+            "./node_modules/smooth-scrollbar/dist/smooth-scrollbar.js",
+            "./node_modules/datatables/media/js/jquery.dataTables.min.js",
+            "./node_modules/swiper/swiper-bundle.min.js",          
+            "./node_modules/vanillajs-datepicker/dist/js/datepicker-full.js",
+            "./node_modules/sweetalert2/dist/sweetalert2.min.js",
+            "./src/assets/vendor/Leaflet/leaflet.js"
+        ]
+    }
+}
